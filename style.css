@@ -30,7 +30,7 @@ body {
 }
 
 #main-container {
-    min-height: 300px;
+    min-height: 200px;
     background-color: var(--clr-baby-powder);
     border-radius: 20px;
     box-shadow: 5px 5px 20px var(--clr-russian-violet);
@@ -42,7 +42,8 @@ body {
     padding: 20px 60px;
     padding-top: 30px;
     color: var(--clr-baby-powder);
-    font-size: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
 }
 
 #form-area {
@@ -51,7 +52,8 @@ body {
 
 label {
     display: block;
-    margin-bottom: 3px;
+    margin-top: 10px;
+    margin-bottom: 5px;
     font-size: 0.9rem;
 }
 
@@ -62,17 +64,26 @@ label {
     font-weight: 100;
 }
 
-#submit-button {
+#list-entry:focus {
+    outline: none;
+}
+
+.submit-button {
     background-color: var(--clr-russian-violet);
     color: var(--clr-baby-powder);
     border: none;
     border-radius: 5px;
-    padding: 5px 10px;
-    font-weight: var(--fw-regular);
+    padding: 6px 10px;
+    font-weight: var(--fw-extrabold);
+}
+
+.submit-button:hover {
+    cursor: pointer;
+    background-color: #302F4D;
 }
 
 #list-item-generator {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 #list-area {
@@ -116,4 +127,12 @@ input[type="checkbox"] {
 
 input[type="checkbox"]:hover {
     cursor: pointer;
+}
+
+#clear-button {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #fe0000;
+    font-weight: var(--fw-extrabold);
 }
