@@ -15,7 +15,7 @@
         <h1>Shopping List</h1>
         <div id="form-area">
             <form id="list-item-generator">
-                <label for="list-entry">Enter Shopping Item: </label>
+                <label for="list-entry">What items are we buying today? </label>
                 <input type="text" id="list-entry" placeholder="Shopping Item">
                 <input type="submit" value="ADD ITEM" class="submit-button">
             </form>
@@ -24,7 +24,10 @@
 
                 </ul>
             </div>
-            <button class="submit-button" id="clear-button">CLEAR LIST</button>
+            <div class="bottom-buttons hidden">
+                <button class="submit-button" id="mark-all-button">PURCHASED ALL</button>
+                <button class="submit-button" id="clear-button">CLEAR ALL</button>
+            </div>
         </div>
     </div>
 
